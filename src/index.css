@@ -10,7 +10,7 @@ input , button{ outline: none; color: #fff; padding: 5px; background: transparen
 .containe {
   max-height: 80vh;
   max-width: 400px;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 
 }
 ul {
