@@ -55,7 +55,7 @@ class TodoApp extends React.Component {
         return (
         <ul>
           {this.props.items.map(item => (
-            <li key={item.id}>{item.text} <i onClick={this.remv}>remove</i></li> 
+            <li className="item" key={item.id}> <p> {item.text}</p> <span onClick={this.remv}>remove</span></li> 
           ))}
         </ul>
       );
