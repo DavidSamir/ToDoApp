@@ -1,36 +1,53 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+monospace;
 }
 .developed {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  opacity: 0.4;
-  font-size: 14px;
-  transition: .5s;
-  cursor: pointer;
+position: absolute;
+bottom: 10px;
+right: 10px;
+opacity: 0.4;
+font-size: 14px;
+transition: .5s;
+cursor: pointer;
 }
 .developed a {
 color: #fff;
 text-decoration: none;}
 .developed:hover { 
-  
-  opacity: 0.9;
-  font-size: 17px;
 
-    }
+opacity: 0.9;
+font-size: 17px;
+
+}
 
 
-    .App-header h3 {
-      margin-top: -100px;
-    }
+.App-header h3 {
+margin-top: -100px;
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: auto 60px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.39);
+}
+
+
+input , button{
+  outline: none;
+  color: #fff;
+  padding: 5px;
+  background: transparent;
+  border: none;
+}

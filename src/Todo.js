@@ -13,7 +13,6 @@ class TodoApp extends React.Component {
       return (
         <div>
           <h3>TODO APP</h3>
-          <TodoList items={this.state.items} />
           <form onSubmit={this.handleSubmit}>
             <input
               id="new-todo"
@@ -21,9 +20,10 @@ class TodoApp extends React.Component {
               value={this.state.text}
             />
             <button>
-              Add #{this.state.items.length + 1}
+              Add
             </button>
           </form>
+          <TodoList items={this.state.items} />
           <div className="developed" > <a href="https://davidsamir.com" target="_blank" rel="noopener noreferrer" >David Samir</a> </div>
         </div>
       );
