@@ -47,17 +47,19 @@ class TodoApp extends React.Component {
   
   class TodoList extends React.Component {
       remv(e) {
-          e.currentTarget.parentElement.remove()
+          e.currentTarget.parentElement.parentElement.remove()
+        //   localStorage.setItem("todo", "this.props.items.id");
         }
     render() {
-        localStorage.setItem("todo", "this.props.items.id");
 
         return (
-        <ul>
-          {this.props.items.map(item => (
-            <li className="item" key={item.id}> <p> {item.text}</p> <span onClick={this.remv}>remove</span></li> 
-          ))}
-        </ul>
+            <div className="containe">
+                <ul>
+                {this.props.items.map(item => (
+                    <li key={item.id}> <div  className="item"> <p> {item.text}</p> <span onClick={this.remv}>remove</span> </div> </li> 
+                    ))}
+                </ul>
+              </div>
       );
     }
   }

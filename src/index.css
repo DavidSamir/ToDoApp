@@ -7,12 +7,18 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
 form { display: grid; grid-template-columns: auto 60px; border-radius: 5px; border: 2px solid rgba(255, 255, 255, 0.39); }
 input , button{ outline: none; color: #fff; padding: 5px; background: transparent; border: none; }
 
+.containe {
+  max-height: 80vh;
+  max-width: 400px;
+  /* overflow-y: auto; */
 
+}
 ul {
   list-style: none;
   padding: 0;
   text-align: left;
   margin: 15px 0;
+  list-style: decimal-leading-zero;
 }
 li {
   
@@ -26,11 +32,7 @@ p {
 span {
   text-align: right;
   font-size: 13px;
-  cursor: pointer !important;
-
-}
-
-
+  cursor: pointer !important; }
 .item {
   display: grid;
   grid-template-columns:1fr  auto;
