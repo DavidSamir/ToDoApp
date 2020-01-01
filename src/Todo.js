@@ -14,11 +14,7 @@ class TodoApp extends React.Component {
         <div>
           <h3>TODO APP</h3>
           <form onSubmit={this.handleSubmit}>
-            <input
-              id="new-todo"
-              onChange={this.handleChange}
-              value={this.state.text}
-            />
+            <input id="new-todo" onChange={this.handleChange} value={this.state.text} />
             <button>
               Add
             </button>
@@ -50,11 +46,16 @@ class TodoApp extends React.Component {
   }
   
   class TodoList extends React.Component {
+      remv(e) {
+          e.currentTarget.parentElement.remove()
+        }
     render() {
-      return (
+        localStorage.setItem("todo", "this.props.items.id");
+
+        return (
         <ul>
           {this.props.items.map(item => (
-            <li key={item.id}>{item.text}</li>
+            <li key={item.id}>{item.text} <i onClick={this.remv}>remove</i></li> 
           ))}
         </ul>
       );
