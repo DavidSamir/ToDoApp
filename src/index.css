@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.developed {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.4;
+  font-size: 14px;
+  transition: .5s;
+  cursor: pointer;
+}
+.developed a {
+color: #fff;
+text-decoration: none;}
+.developed:hover { 
+  
+  opacity: 0.9;
+  font-size: 17px;
+
+
+
+    }
+
+
+    .App-header h3 {
+      margin-top: -100px;
+    }
